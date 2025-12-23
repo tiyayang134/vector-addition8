@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vector Addition Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>✨ Vector Addition Calculator ✨</h1>
+
+    <!-- Mode Selection -->
+    <div class="mode">
+        <label>
+            <input type="radio" name="mode" value="2D" checked>
+            2D
+        </label>
+        <label>
+            <input type="radio" name="mode" value="3D">
+            3D
+        </label>
+    </div>
+
+    <!-- Inputs -->
+    <div class="inputs">
+        <h3>Vector A</h3>
+        <input type="number" id="x1" placeholder="x₁">
+        <input type="number" id="y1" placeholder="y₁">
+        <input type="number" id="z1" placeholder="z₁" class="z-input">
+
+        <h3>Vector B</h3>
+        <input type="number" id="x2" placeholder="x₂">
+        <input type="number" id="y2" placeholder="y₂">
+        <input type="number" id="z2" placeholder="z₂" class="z-input">
+    </div>
+
+    <!-- Button -->
+    <button onclick="calculate()">💖 Calculate 💖</button>
+
+    <!-- Output -->
+    <div class="output">
+        <h3>Step-by-Step Solution</h3>
+        <pre id="result"></pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
